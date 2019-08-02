@@ -77,6 +77,22 @@
         <servlet-name>PublisherServlet</servlet-name>
         <url-pattern>/publisher/publish</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>SinglePage</servlet-name>
+        <servlet-class>pageLink.SinglePageController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SinglePage</servlet-name>
+        <url-pattern>/page/single-page</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CategoryPage</servlet-name>
+        <servlet-class>pageLink.CategoryPageController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryPage</servlet-name>
+        <url-pattern>/page/category</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>SubscriberServlet</servlet-name>
@@ -86,25 +102,6 @@
         <servlet-name>SubscriberServlet</servlet-name>
         <url-pattern>/subscriber/sub</url-pattern>
     </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Subscriber2Servlet</servlet-name>
-        <servlet-class>pubsub.demo.Subscriber2Controller</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Subscriber2Servlet</servlet-name>
-        <url-pattern>/subscriber2/sub</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Subscriber3Servlet</servlet-name>
-        <servlet-class>pubsub.demo.Subscriber3Controller</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Subscriber3Servlet</servlet-name>
-        <url-pattern>/subscriber3/sub</url-pattern>
-    </servlet-mapping>
-
     <filter>
         <filter-name>ObjectifyRegisterFilter</filter-name>
         <filter-class>filter.ObjectifyRegisterFilter</filter-class>
